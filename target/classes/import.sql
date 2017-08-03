@@ -1,0 +1,12 @@
+INSERT INTO `tjp`.`country` ( `country_name`, `language`) VALUES ( "english", "en");
+INSERT INTO `tjp`.`country` ( `country_name`, `language`) VALUES ( "russian", "ru");
+INSERT INTO `tjp`.`location` ( `location_name`, `country_id`, `latitude`, `longitude`) VALUES ( "london", 1, 100, 101);
+INSERT INTO `tjp`.`location` ( `location_name`, `country_id`, `latitude`, `longitude`) VALUES ( "moscow", 2, 111, 121);
+INSERT INTO `tjp`.`user_group` ( `group_name`) VALUES ( "front-end");
+INSERT INTO `tjp`.`user_group` ( `group_name`) VALUES ( "back-end");
+INSERT INTO `tjp`.`user` ( `user_name`, `location_id`, `user_group_id`) VALUES ( "vasya", 2, 1);
+INSERT INTO `tjp`.`user` ( `user_name`, `location_id`, `user_group_id`) VALUES ( "vanya", 1, 2);
+INSERT INTO `tjp`.`sesionn` ( `user_id`, `date_opened`, `date_closed`) VALUES ( 1, "2017-08-10 21:39:20", "2017-08-11 21:39:20");
+INSERT INTO `tjp`.`sesionn` ( `user_id`, `date_opened`, `date_closed`) VALUES ( 2, "2017-08-18 21:39:20", "2017-08-17 21:39:20");
+INSERT INTO `tjp`.`request` ( `url`, `method`, `params`, `session_id`) VALUES ( "vk.com", "pc", "windows", 1);
+INSERT INTO `tjp`.`request` ( `url`, `method`, `params`, `session_id`) VALUES ( "facebook.com", "mobile", "android", 2);
